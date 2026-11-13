@@ -1,0 +1,177 @@
+{
+  "counters": {
+    "donors_registered": 12847,
+    "units_collected_ytd": 10552,
+    "lives_reached": 31656,
+    "hospitals_onboarded": 64,
+    "banks_onboarded": 38,
+    "avg_match_minutes": 24
+  },
+  "monthly_donations": [
+    {
+      "month_label": "Dec",
+      "donations": 689,
+      "units": 689,
+      "lives_reached": 2067
+    },
+    {
+      "month_label": "Jan",
+      "donations": 762,
+      "units": 762,
+      "lives_reached": 2286
+    },
+    {
+      "month_label": "Feb",
+      "donations": 786,
+      "units": 786,
+      "lives_reached": 2358
+    },
+    {
+      "month_label": "Mar",
+      "donations": 797,
+      "units": 797,
+      "lives_reached": 2391
+    },
+    {
+      "month_label": "Apr",
+      "donations": 784,
+      "units": 784,
+      "lives_reached": 2352
+    },
+    {
+      "month_label": "May",
+      "donations": 813,
+      "units": 813,
+      "lives_reached": 2439
+    },
+    {
+      "month_label": "Jun",
+      "donations": 900,
+      "units": 900,
+      "lives_reached": 2700
+    },
+    {
+      "month_label": "Jul",
+      "donations": 947,
+      "units": 947,
+      "lives_reached": 2841
+    },
+    {
+      "month_label": "Aug",
+      "donations": 912,
+      "units": 912,
+      "lives_reached": 2736
+    },
+    {
+      "month_label": "Sep",
+      "donations": 985,
+      "units": 985,
+      "lives_reached": 2955
+    },
+    {
+      "month_label": "Oct",
+      "donations": 1036,
+      "units": 1036,
+      "lives_reached": 3108
+    },
+    {
+      "month_label": "Nov",
+      "donations": 1141,
+      "units": 1141,
+      "lives_reached": 3423
+    }
+  ],
+  "district_totals": [
+    {
+      "district_slug": "thanjavur",
+      "district_name": "Thanjavur",
+      "donors_registered": 36,
+      "donations_ytd": 959
+    },
+    {
+      "district_slug": "tiruchirappalli",
+      "district_name": "Tiruchirappalli",
+      "donors_registered": 59,
+      "donations_ytd": 887
+    },
+    {
+      "district_slug": "coimbatore",
+      "district_name": "Coimbatore",
+      "donors_registered": 106,
+      "donations_ytd": 694
+    },
+    {
+      "district_slug": "kanniyakumari",
+      "district_name": "Kanniyakumari",
+      "donors_registered": 97,
+      "donations_ytd": 585
+    },
+    {
+      "district_slug": "tirunelveli",
+      "district_name": "Tirunelveli",
+      "donors_registered": 90,
+      "donations_ytd": 492
+    },
+    {
+      "district_slug": "chennai",
+      "district_name": "Chennai",
+      "donors_registered": 99,
+      "donations_ytd": 482
+    },
+    {
+      "district_slug": "madurai",
+      "district_name": "Madurai",
+      "donors_registered": 108,
+      "donations_ytd": 482
+    },
+    {
+      "district_slug": "erode",
+      "district_name": "Erode",
+      "donors_registered": 84,
+      "donations_ytd": 426
+    },
+    {
+      "district_slug": "salem",
+      "district_name": "Salem",
+      "donors_registered": 50,
+      "donations_ytd": 382
+    },
+    {
+      "district_slug": "vellore",
+      "district_name": "Vellore",
+      "donors_registered": 79,
+      "donations_ytd": 246
+    }
+  ],
+  "stories": [
+    {
+      "story_id": "BL-S-01",
+      "quote": "I registered on a Tuesday evening because my sister needed two units. By Wednesday noon, three strangers from Adyar had pledged. The first one arrived before my shift ended.",
+      "attribution": "Suresh K.",
+      "role": "Donor since 2019 · Chennai",
+      "blood_group": "B+",
+      "donations": 11,
+      "is_sample": true
+    },
+    {
+      "story_id": "BL-S-02",
+      "quote": "The reminder came ninety days after my last donation, exactly when my body was ready again. I have never had to remember a date myself since then.",
+      "attribution": "Priya M.",
+      "role": "Donor since 2021 · Coimbatore",
+      "blood_group": "O+",
+      "donations": 6,
+      "is_sample": true
+    },
+    {
+      "story_id": "BL-S-03",
+      "quote": "I organised a camp in our college hostel. Fifty-one students registered, forty-two were eligible, and every unit was collected by the district blood centre the same evening.",
+      "attribution": "Karthik R.",
+      "role": "Camp organiser · Tiruchirappalli",
+      "blood_group": "A+",
+      "donations": 4,
+      "is_sample": true
+    }
+  ],
+  "generated_at": "2026-11-12T06:00:00.000Z",
+  "is_sample": true
+}

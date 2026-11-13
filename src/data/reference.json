@@ -1,0 +1,124 @@
+{
+  "blood_groups": [
+    {
+      "code": "O+",
+      "label": "O+",
+      "is_negative": false,
+      "rarity_note": null
+    },
+    {
+      "code": "O-",
+      "label": "O-",
+      "is_negative": true,
+      "rarity_note": "Rare — universal donor"
+    },
+    {
+      "code": "A+",
+      "label": "A+",
+      "is_negative": false,
+      "rarity_note": null
+    },
+    {
+      "code": "A-",
+      "label": "A-",
+      "is_negative": true,
+      "rarity_note": "Rare — universal donor"
+    },
+    {
+      "code": "B+",
+      "label": "B+",
+      "is_negative": false,
+      "rarity_note": null
+    },
+    {
+      "code": "B-",
+      "label": "B-",
+      "is_negative": true,
+      "rarity_note": "Rare — universal donor"
+    },
+    {
+      "code": "AB+",
+      "label": "AB+",
+      "is_negative": false,
+      "rarity_note": null
+    },
+    {
+      "code": "AB-",
+      "label": "AB-",
+      "is_negative": true,
+      "rarity_note": "Rare — universal donor"
+    }
+  ],
+  "districts": [
+    {
+      "slug": "chennai",
+      "name": "Chennai",
+      "name_ta": "சென்னை",
+      "lat": 13.0827,
+      "lon": 80.2707
+    },
+    {
+      "slug": "coimbatore",
+      "name": "Coimbatore",
+      "name_ta": "கோயம்புத்தூர்",
+      "lat": 11.0168,
+      "lon": 76.9558
+    },
+    {
+      "slug": "madurai",
+      "name": "Madurai",
+      "name_ta": "மதுரை",
+      "lat": 9.9252,
+      "lon": 78.1198
+    },
+    {
+      "slug": "tiruchirappalli",
+      "name": "Tiruchirappalli",
+      "name_ta": "திருச்சிராப்பள்ளி",
+      "lat": 10.7905,
+      "lon": 78.7047
+    },
+    {
+      "slug": "salem",
+      "name": "Salem",
+      "name_ta": "சேலம்",
+      "lat": 11.6643,
+      "lon": 78.146
+    },
+    {
+      "slug": "tirunelveli",
+      "name": "Tirunelveli",
+      "name_ta": "திருநெல்வேலி",
+      "lat": 8.7139,
+      "lon": 77.7567
+    },
+    {
+      "slug": "kanniyakumari",
+      "name": "Kanniyakumari",
+      "name_ta": "கன்னியாகுமரி",
+      "lat": 8.1833,
+      "lon": 77.4119
+    },
+    {
+      "slug": "erode",
+      "name": "Erode",
+      "name_ta": "ஈரோடு",
+      "lat": 11.341,
+      "lon": 77.7172
+    },
+    {
+      "slug": "vellore",
+      "name": "Vellore",
+      "name_ta": "வேலூர்",
+      "lat": 12.9165,
+      "lon": 79.1325
+    },
+    {
+      "slug": "thanjavur",
+      "name": "Thanjavur",
+      "name_ta": "தஞ்சாவூர்",
+      "lat": 10.787,
+      "lon": 79.1378
+    }
+  ]
+}

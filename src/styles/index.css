@@ -1,0 +1,367 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fonts are self-hosted via /src/main.jsx (@fontsource-variable) so there are
+   zero third-party requests and no FOUT from a CDN. */
+
+@layer base {
+  :root {
+    --ease-calm: cubic-bezier(0.22, 1, 0.36, 1);
+    --crimson: #b3122b;
+    --oxblood: #5c0a17;
+    --bone: #fbf7f6;
+    --ink: #1d1416;
+    --teal: #0f6b66;
+    --hairline: rgba(29, 20, 22, 0.12);
+    --surface: #fffdfc;
+    --surface-sunk: #f4edeb;
+    --on-surface: #1d1416;
+    --on-surface-soft: rgba(29, 20, 22, 0.6);
+  }
+
+  .dark {
+    --hairline: rgba(251, 247, 246, 0.14);
+    --surface: #1a1214;
+    --surface-sunk: #120c0e;
+    --on-surface: #fbf7f6;
+    --on-surface-soft: rgba(251, 247, 246, 0.62);
+    --teal: #4fbdb2;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    font-family: 'Instrument Sans Variable', 'Instrument Sans', system-ui, sans-serif;
+    font-synthesis-weight: none;
+    overflow-x: hidden;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Tamil glyphs get their own face wherever lang="ta" is set. */
+  [lang='ta'] {
+    font-family: 'Noto Sans Tamil Variable', 'Noto Sans Tamil', sans-serif;
+    line-height: 1.7;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Bricolage Grotesque Variable', 'Bricolage Grotesque', Georgia, serif;
+    font-weight: 700;
+    letter-spacing: -0.035em;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  ::selection {
+    background: var(--crimson);
+    color: #fff;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--crimson);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  .dark :focus-visible {
+    outline-color: #ff8fa0;
+  }
+
+  /* Lenis */
+  html.lenis, html.lenis body { height: auto; }
+  .lenis.lenis-smooth { scroll-behavior: auto !important; }
+  .lenis.lenis-stopped { overflow: hidden; }
+}
+
+@layer components {
+  .shell {
+    @apply mx-auto w-full max-w-shell px-5 sm:px-8 lg:px-12;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 text-[11px] font-medium uppercase tracking-[0.22em] text-crimson dark:text-[#FF8FA0];
+  }
+
+  .hairline {
+    border-color: var(--hairline);
+  }
+
+  /* A card is its own contrast context: it resets colour, otherwise a card
+     sitting on a dark section inherits light text onto a light surface. */
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--hairline);
+    color: var(--on-surface);
+  }
+
+  /* Soft radial "pressure" behind dark sections — not a gradient blob, a vignette. */
+  .vignette::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: radial-gradient(120% 80% at 50% 0%, transparent 40%, rgba(29, 20, 22, 0.35) 100%);
+  }
+
+  .grain::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.06;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  .skeleton {
+    background: linear-gradient(
+      100deg,
+      var(--surface-sunk) 20%,
+      color-mix(in srgb, var(--surface-sunk) 60%, var(--surface)) 40%,
+      var(--surface-sunk) 60%
+    );
+    background-size: 220% 100%;
+    animation: skeleton-sweep 1.4s linear infinite;
+  }
+
+  @keyframes skeleton-sweep {
+    to { background-position: -220% 0; }
+  }
+
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+}
+
+@layer utilities {
+  .text-balance { text-wrap: balance; }
+  .px-safe { padding-left: env(safe-area-inset-left); padding-right: env(safe-area-inset-right); }
+
+  /* Reduced motion: kill transform/scroll effects globally, keep opacity. */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+/* ------------------------------------------------------------------ leaflet
+   Leaflet's own chrome is rewritten to match the design system: no white
+   default popups, crimson pins, tinted tiles that survive dark mode. */
+.bl-leaflet {
+  z-index: 0; /* never compete with the sticky nav / modal */
+  border-radius: inherit;
+  background: #e8e2e0;
+  font-family: 'Instrument Sans Variable', system-ui, sans-serif;
+  outline: none;
+}
+
+.dark .bl-leaflet {
+  background: #1a1416;
+}
+
+/* Tiles are desaturated and pushed toward the warm palette so the map reads as
+   part of the page rather than a screenshot pasted onto it. */
+.bl-leaflet .leaflet-tile-pane {
+  filter: grayscale(0.55) sepia(0.12) saturate(0.75) contrast(1.02) brightness(1.02);
+}
+
+.dark .bl-leaflet .leaflet-tile-pane {
+  filter: grayscale(0.6) saturate(0.7) contrast(0.95) brightness(0.95);
+}
+
+/* Basemap scrim (Leaflet pane created in TamilNaduLeafletMap). */
+.bl-leaflet .bl-tint {
+  background: rgba(92, 10, 23, 0.06);
+}
+
+.dark .bl-leaflet .bl-tint {
+  background: rgba(18, 12, 14, 0.62);
+}
+
+.bl-leaflet .leaflet-control-attribution {
+  background: color-mix(in srgb, #fbf7f6 82%, transparent) !important;
+  color: rgba(29, 20, 22, 0.55) !important;
+  font-size: 10px !important;
+  padding: 2px 6px !important;
+  border-radius: 6px 0 0 0;
+  backdrop-filter: blur(6px);
+}
+
+.bl-leaflet .leaflet-control-attribution a {
+  color: #8a0d20 !important;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.dark .bl-leaflet .leaflet-control-attribution {
+  background: rgba(26, 18, 20, 0.85) !important;
+  color: rgba(251, 247, 246, 0.55) !important;
+}
+
+.dark .bl-leaflet .leaflet-control-attribution a {
+  color: #ff8fa0 !important;
+}
+
+/* zoom control */
+.bl-leaflet .leaflet-control-zoom {
+  border: 0 !important;
+  box-shadow: 0 6px 18px -10px rgba(29, 20, 22, 0.5);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.bl-leaflet .leaflet-control-zoom a {
+  width: 30px !important;
+  height: 30px !important;
+  line-height: 30px !important;
+  background: rgba(251, 247, 246, 0.92) !important;
+  color: #1d1416 !important;
+  border-bottom: 1px solid rgba(29, 20, 22, 0.1) !important;
+  font-weight: 500;
+}
+
+.bl-leaflet .leaflet-control-zoom a:hover {
+  background: #fff !important;
+  color: #b3122b !important;
+}
+
+.bl-leaflet .leaflet-control-zoom a:focus-visible {
+  outline: 2px solid #b3122b;
+  outline-offset: -2px;
+}
+
+.dark .bl-leaflet .leaflet-control-zoom a {
+  background: rgba(31, 20, 24, 0.92) !important;
+  color: #fbf7f6 !important;
+  border-bottom-color: rgba(251, 247, 246, 0.12) !important;
+}
+
+/* ------------------------------------------------------------------- pins */
+.bl-pin-wrap {
+  background: none !important;
+  border: 0 !important;
+}
+
+.bl-pin {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: var(--size);
+  height: var(--size);
+  transform: translate(-50%, -50%);
+  display: block;
+  pointer-events: auto;
+}
+
+.bl-pin__dot {
+  position: absolute;
+  inset: 0;
+  border-radius: 999px;
+  background: var(--dot);
+  border: 1.5px solid rgba(251, 247, 246, 0.9);
+  box-shadow: 0 2px 6px -1px rgba(29, 20, 22, 0.45);
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.bl-pin__halo {
+  position: absolute;
+  inset: 0;
+  border-radius: 999px;
+  background: var(--dot);
+  opacity: 0.22;
+  transform: scale(1);
+  animation: bl-pin-pulse 3.6s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+}
+
+.bl-pin__label {
+  position: absolute;
+  left: 50%;
+  top: calc(100% + 5px);
+  transform: translateX(-50%);
+  white-space: nowrap;
+  font-size: 9.5px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: #1d1416;
+  background: rgba(251, 247, 246, 0.88);
+  padding: 1px 5px;
+  border-radius: 5px;
+  backdrop-filter: blur(4px);
+  opacity: 0;
+  transition: opacity 0.3s cubic-bezier(0.22, 1, 0.36, 1),
+    top 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.dark .bl-pin__label {
+  color: #fbf7f6;
+  background: rgba(26, 18, 20, 0.85);
+}
+
+.bl-pin.is-active .bl-pin__label,
+.bl-pin:hover .bl-pin__label,
+.bl-pin:focus-visible .bl-pin__label {
+  opacity: 1;
+  top: calc(100% + 7px);
+}
+
+.bl-pin.is-active .bl-pin__dot {
+  transform: scale(1.05);
+  box-shadow: 0 0 0 3px rgba(251, 247, 246, 0.75), 0 3px 10px -2px rgba(29, 20, 22, 0.55);
+}
+
+.bl-pin.is-active .bl-pin__halo {
+  animation-duration: 2.2s;
+}
+
+@keyframes bl-pin-pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.3;
+  }
+  70% {
+    transform: scale(2.6);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(2.6);
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bl-pin__halo {
+    animation: none;
+    opacity: 0.18;
+  }
+}
+
+/* Spotlight styling for the live Leaflet map (kept in CSS so dark mode and
+   reduced-motion rules apply without re-rendering the map). */
+.bl-tn-veil {
+  fill: rgba(251, 247, 246, 0.62);
+}
+
+.dark .bl-tn-veil {
+  fill: rgba(20, 13, 15, 0.66);
+}
+
+.bl-tn-edge {
+  stroke: #b3122b;
+  stroke-opacity: 0.55;
+  stroke-dasharray: 5 4;
+}
+
+.dark .bl-tn-edge {
+  stroke: #ff8fa0;
+  stroke-opacity: 0.5;
+}

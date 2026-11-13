@@ -1,0 +1,332 @@
+{
+  "bank-fridge": {
+    "name": "bank-fridge",
+    "width": 1200,
+    "height": 896,
+    "lqip": "data:image/webp;base64,UklGRrAAAABXRUJQVlA4IKQAAACwBACdASoYABIAPwl8tVSrp6SjKAgBcCEJZwAALtahAH3WHYtK2armm4f6easAAP7ppB4zF6w0P/eF5PmgkStMeEJL3QnJeBJG0gfX4a4dZwCyJa3iavikxPgDMiIti1nDklyyE4nsT8CnWWw/9UuhObAfLkMVFRmiyL910MBsHz1KWZUSv1p1S3PM9SSimRCev1Z9V9ZvGMfXf3lh+4ALAAAAAA==",
+    "sources": [
+      {
+        "w": 1200,
+        "webp": "/img/bank-fridge-1200.webp",
+        "avif": "/img/bank-fridge-1200.avif"
+      },
+      {
+        "w": 900,
+        "webp": "/img/bank-fridge-900.webp",
+        "avif": "/img/bank-fridge-900.avif"
+      },
+      {
+        "w": 640,
+        "webp": "/img/bank-fridge-640.webp",
+        "avif": "/img/bank-fridge-640.avif"
+      },
+      {
+        "w": 440,
+        "webp": "/img/bank-fridge-440.webp",
+        "avif": "/img/bank-fridge-440.avif"
+      },
+      {
+        "w": 320,
+        "webp": "/img/bank-fridge-320.webp",
+        "avif": "/img/bank-fridge-320.avif"
+      }
+    ],
+    "fallback": "/img/bank-fridge-320.webp"
+  },
+  "camp-college": {
+    "name": "camp-college",
+    "width": 1200,
+    "height": 896,
+    "lqip": "data:image/webp;base64,UklGRrwAAABXRUJQVlA4ILAAAABQBQCdASoYABIAPwl8tlSrp6SjKAgBcCEJZQCnFBGZowAkmi14uUY1SpJUce5PxapIwgAA935kbgA85hprSoizfKANMewKRgj4Dv/dfDDOUJnA/JDlOEaFKBXtNugWXwzXeJPA/3ypQLVe1xTTq8stnQuHTetsdASNI//oySMMXBHQvpqRriORFN8+PRvUYsKyttppuArKTbKKueZCEm+jZuf0Cw7donUTKP0GugjsAA==",
+    "sources": [
+      {
+        "w": 1200,
+        "webp": "/img/camp-college-1200.webp",
+        "avif": "/img/camp-college-1200.avif"
+      },
+      {
+        "w": 900,
+        "webp": "/img/camp-college-900.webp",
+        "avif": "/img/camp-college-900.avif"
+      },
+      {
+        "w": 640,
+        "webp": "/img/camp-college-640.webp",
+        "avif": "/img/camp-college-640.avif"
+      },
+      {
+        "w": 440,
+        "webp": "/img/camp-college-440.webp",
+        "avif": "/img/camp-college-440.avif"
+      },
+      {
+        "w": 320,
+        "webp": "/img/camp-college-320.webp",
+        "avif": "/img/camp-college-320.avif"
+      }
+    ],
+    "fallback": "/img/camp-college-320.webp"
+  },
+  "family-waiting": {
+    "name": "family-waiting",
+    "width": 1200,
+    "height": 896,
+    "lqip": "data:image/webp;base64,UklGRqQAAABXRUJQVlA4IJgAAACQBACdASoYABIAPwl4tFMrpyUiqAqpcCEJQBYdgX4GCf8eQox4MrZMaUZzEcAA/mAspEAwYsxJj7VaSBIW6CgxPcYRtbaI2JrTTeEo3VEfl6KFXPohQd/IhFdesQ48ZdFsCh8xyItOKIN+nkPBn2nJW1ZduxC30SiczQ52APcznptIK2lkz7+Nc2T+aaQ1EEZ1QK0K5kAAAA==",
+    "sources": [
+      {
+        "w": 1200,
+        "webp": "/img/family-waiting-1200.webp",
+        "avif": "/img/family-waiting-1200.avif"
+      },
+      {
+        "w": 900,
+        "webp": "/img/family-waiting-900.webp",
+        "avif": "/img/family-waiting-900.avif"
+      },
+      {
+        "w": 640,
+        "webp": "/img/family-waiting-640.webp",
+        "avif": "/img/family-waiting-640.avif"
+      },
+      {
+        "w": 440,
+        "webp": "/img/family-waiting-440.webp",
+        "avif": "/img/family-waiting-440.avif"
+      },
+      {
+        "w": 320,
+        "webp": "/img/family-waiting-320.webp",
+        "avif": "/img/family-waiting-320.avif"
+      }
+    ],
+    "fallback": "/img/family-waiting-320.webp"
+  },
+  "hero": {
+    "name": "hero",
+    "width": 1376,
+    "height": 768,
+    "lqip": "data:image/webp;base64,UklGRrAAAABXRUJQVlA4IKQAAAAwBACdASoYAA0APwlur0+rpiQiMAgBcCEJZACsMoAChPm+vEWLrNnfA3QA/sbSZN+HxB3yCZdn285N55syjrlwmiEqceR963Rm/yJlMOcpMZhsX8J9Ybd3jiVgLTxi3ECbht8irhn22sCJLGRagT3i9rxzsjyGRtKHbx1PfKhiJbt4F0007R2MbyyUP/v/NpyI64ZFPU45t+fpS+1BVdtO9H4AAA==",
+    "sources": [
+      {
+        "w": 1080,
+        "webp": "/img/hero-1080.webp",
+        "avif": "/img/hero-1080.avif"
+      },
+      {
+        "w": 720,
+        "webp": "/img/hero-720.webp",
+        "avif": "/img/hero-720.avif"
+      },
+      {
+        "w": 480,
+        "webp": "/img/hero-480.webp",
+        "avif": "/img/hero-480.avif"
+      }
+    ],
+    "fallback": "/img/hero-480.webp"
+  },
+  "journey-deliver": {
+    "name": "journey-deliver",
+    "width": 1200,
+    "height": 896,
+    "lqip": "data:image/webp;base64,UklGRrgAAABXRUJQVlA4IKwAAADwBACdASoYABIAPwl6sFOrp6QiqAqpcCEJYwClrAtU1YkjWQmc0iE9SVw2ZiKZ6gAA/jK11jFPjXdnhUvwX2i7GasXk2FjU4+Lt5LcTwwuFYjLcMbOe9AMnFhm9/LSF2Hl1y8JiT7jvBDiC0Zx2ujP3BvXLvDW0LHwryEhW3YqwAXvxmy2YI78qCLOe1iQ1sx5gVk4TnNnepR/agkMhdNQrimmbujOpEXG2gAA",
+    "sources": [
+      {
+        "w": 1200,
+        "webp": "/img/journey-deliver-1200.webp",
+        "avif": "/img/journey-deliver-1200.avif"
+      },
+      {
+        "w": 900,
+        "webp": "/img/journey-deliver-900.webp",
+        "avif": "/img/journey-deliver-900.avif"
+      },
+      {
+        "w": 640,
+        "webp": "/img/journey-deliver-640.webp",
+        "avif": "/img/journey-deliver-640.avif"
+      },
+      {
+        "w": 440,
+        "webp": "/img/journey-deliver-440.webp",
+        "avif": "/img/journey-deliver-440.avif"
+      },
+      {
+        "w": 320,
+        "webp": "/img/journey-deliver-320.webp",
+        "avif": "/img/journey-deliver-320.avif"
+      }
+    ],
+    "fallback": "/img/journey-deliver-320.webp"
+  },
+  "journey-donor": {
+    "name": "journey-donor",
+    "width": 1200,
+    "height": 896,
+    "lqip": "data:image/webp;base64,UklGRtIAAABXRUJQVlA4IMYAAAAwBQCdASoYABIAPwl4sFOrpyQiqAqpcCEJZQC06Yv+UAuMgZ2Pe1iGBcI5vrwuQc8tAADN+Q4zyFmdsVbk+sXt/37qA+9/3Hzu33G3sPYYSgWUkR7JwYs4shNu5TOMbrtOhsjKtiAR29E0+jIi1+LOxunwlOSJ/g+e1g7BIvcDmjoGzuoNcnr8V+hhh/NBJeyzhlGfTeyoPW7QEK/or6DFPL8An32QcNUB+3rFxUbnKLZjCSwDVZW4Oh5EQ7YzO+3wRZ4AAAA=",
+    "sources": [
+      {
+        "w": 1200,
+        "webp": "/img/journey-donor-1200.webp",
+        "avif": "/img/journey-donor-1200.avif"
+      },
+      {
+        "w": 900,
+        "webp": "/img/journey-donor-900.webp",
+        "avif": "/img/journey-donor-900.avif"
+      },
+      {
+        "w": 640,
+        "webp": "/img/journey-donor-640.webp",
+        "avif": "/img/journey-donor-640.avif"
+      },
+      {
+        "w": 440,
+        "webp": "/img/journey-donor-440.webp",
+        "avif": "/img/journey-donor-440.avif"
+      },
+      {
+        "w": 320,
+        "webp": "/img/journey-donor-320.webp",
+        "avif": "/img/journey-donor-320.avif"
+      }
+    ],
+    "fallback": "/img/journey-donor-320.webp"
+  },
+  "journey-lab": {
+    "name": "journey-lab",
+    "width": 1200,
+    "height": 896,
+    "lqip": "data:image/webp;base64,UklGRrgAAABXRUJQVlA4IKwAAAAQBQCdASoYABIAPwl2sVOrpyQiqAqpcCEJYwCdMwBBNTkaHxqtjzZCoxprlWgn3ssAAM43duWuXcnSFhWBQzenU4NeU68p3gwYA4R7xyj5B6G7vhsKriNHGm3KIcRxboBs++D6Zztimoh5FnEhLbzeCpvPh/oBv1zN2V3ONZn08GndIRFmrRtRawgebfGSjDAX9WOvEnIP4sTSYXycRViy4CNLPi1JdoP53gAA",
+    "sources": [
+      {
+        "w": 1200,
+        "webp": "/img/journey-lab-1200.webp",
+        "avif": "/img/journey-lab-1200.avif"
+      },
+      {
+        "w": 900,
+        "webp": "/img/journey-lab-900.webp",
+        "avif": "/img/journey-lab-900.avif"
+      },
+      {
+        "w": 640,
+        "webp": "/img/journey-lab-640.webp",
+        "avif": "/img/journey-lab-640.avif"
+      },
+      {
+        "w": 440,
+        "webp": "/img/journey-lab-440.webp",
+        "avif": "/img/journey-lab-440.avif"
+      },
+      {
+        "w": 320,
+        "webp": "/img/journey-lab-320.webp",
+        "avif": "/img/journey-lab-320.avif"
+      }
+    ],
+    "fallback": "/img/journey-lab-320.webp"
+  },
+  "journey-store": {
+    "name": "journey-store",
+    "width": 1200,
+    "height": 896,
+    "lqip": "data:image/webp;base64,UklGRsYAAABXRUJQVlA4ILoAAACQBQCdASoYABIAPwl8tVSrp6SjKAgBcCEJZQDKAYzGcRjQ8UlCtM4PjAdInCjpN6TLTlY9AAD7oKVuZBVQZPzdAkzcfB9EXJdTj9obC1/Iz+nfPrAoK57uEfZ00rnlo1wIWqDfEbjztltV+DzLMsSqTRX98LikRQY6IMj+yM2/XWim4G9PkDSiiHLycDaGg4aS3h5kF1aQDj+ceoaR5jQL0DqU7tZgXSZDKEsWyY8Iepza/NAXcQZLQAA=",
+    "sources": [
+      {
+        "w": 1200,
+        "webp": "/img/journey-store-1200.webp",
+        "avif": "/img/journey-store-1200.avif"
+      },
+      {
+        "w": 900,
+        "webp": "/img/journey-store-900.webp",
+        "avif": "/img/journey-store-900.avif"
+      },
+      {
+        "w": 640,
+        "webp": "/img/journey-store-640.webp",
+        "avif": "/img/journey-store-640.avif"
+      },
+      {
+        "w": 440,
+        "webp": "/img/journey-store-440.webp",
+        "avif": "/img/journey-store-440.avif"
+      },
+      {
+        "w": 320,
+        "webp": "/img/journey-store-320.webp",
+        "avif": "/img/journey-store-320.avif"
+      }
+    ],
+    "fallback": "/img/journey-store-320.webp"
+  },
+  "nurse-prep": {
+    "name": "nurse-prep",
+    "width": 1200,
+    "height": 896,
+    "lqip": "data:image/webp;base64,UklGRsgAAABXRUJQVlA4ILwAAABwBQCdASoYABIAPwl8tVSrp6SjKAgBcCEJYwDB0AgAcpKCw5MTSegg477VK3uAgDmshJAAAOJOsfmX1v6Sl487Xjwvadi0pW+xngOydIHzqBSdbO0xHGA9Y9XK/SuJrXbqKvESmf7j1jU4gas7buaf7V/tD032+P2f6x9lqg8Ui669yrzXw9QyYTlH08slXqnduJqxC7WQaSVFkSZOhKzbn1XCVsJlI3W1LrZauKzprCGsyZWOgvekNOAAAA==",
+    "sources": [
+      {
+        "w": 1200,
+        "webp": "/img/nurse-prep-1200.webp",
+        "avif": "/img/nurse-prep-1200.avif"
+      },
+      {
+        "w": 900,
+        "webp": "/img/nurse-prep-900.webp",
+        "avif": "/img/nurse-prep-900.avif"
+      },
+      {
+        "w": 640,
+        "webp": "/img/nurse-prep-640.webp",
+        "avif": "/img/nurse-prep-640.avif"
+      },
+      {
+        "w": 440,
+        "webp": "/img/nurse-prep-440.webp",
+        "avif": "/img/nurse-prep-440.avif"
+      },
+      {
+        "w": 320,
+        "webp": "/img/nurse-prep-320.webp",
+        "avif": "/img/nurse-prep-320.avif"
+      }
+    ],
+    "fallback": "/img/nurse-prep-320.webp"
+  },
+  "urgent-ward": {
+    "name": "urgent-ward",
+    "width": 1200,
+    "height": 896,
+    "lqip": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAABQBACdASoYABIAPwl2s1MrpySiqAqpcCEJZwDO7A8lVw2YoRsF4orVKUIAAP7o897U3tSQ9+ge8De2jb0QEIhpP5SZzcfvIrlaxiLhEydHSRkFRHqoeIC0Yp3/T3xHt9m3BAO4Oebh/GfoAnPKU27hJSzgAAAA",
+    "sources": [
+      {
+        "w": 1200,
+        "webp": "/img/urgent-ward-1200.webp",
+        "avif": "/img/urgent-ward-1200.avif"
+      },
+      {
+        "w": 900,
+        "webp": "/img/urgent-ward-900.webp",
+        "avif": "/img/urgent-ward-900.avif"
+      },
+      {
+        "w": 640,
+        "webp": "/img/urgent-ward-640.webp",
+        "avif": "/img/urgent-ward-640.avif"
+      },
+      {
+        "w": 440,
+        "webp": "/img/urgent-ward-440.webp",
+        "avif": "/img/urgent-ward-440.avif"
+      },
+      {
+        "w": 320,
+        "webp": "/img/urgent-ward-320.webp",
+        "avif": "/img/urgent-ward-320.avif"
+      }
+    ],
+    "fallback": "/img/urgent-ward-320.webp"
+  }
+}

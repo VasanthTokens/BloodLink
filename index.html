@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#B3122B" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#140D0F" media="(prefers-color-scheme: dark)" />
+    <title>BloodLink — Every drop connects a life | Tamil Nadu</title>
+    <meta
+      name="description"
+      content="BloodLink connects voluntary blood donors, hospitals and authorised blood banks across Tamil Nadu. Find a matching donor in minutes, pledge to a verified request, or host a camp."
+    />
+    <meta property="og:title" content="BloodLink — Every drop connects a life" />
+    <meta
+      property="og:description"
+      content="A verified network of voluntary donors, hospitals and licensed blood banks across Tamil Nadu."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <script>
+      // Set the theme before paint so dark mode never flashes light.
+      try {
+        var saved = localStorage.getItem('bloodlink-theme')
+        var dark = saved
+          ? saved === 'dark'
+          : window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (dark) document.documentElement.classList.add('dark')
+      } catch (e) {}
+    </script>
+  </head>
+  <body class="bg-bone text-ink antialiased dark:bg-[#140D0F] dark:text-bone">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

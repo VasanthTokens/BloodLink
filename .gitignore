@@ -1,0 +1,12 @@
+node_modules
+dist
+.DS_Store
+*.local
+.env
+.env.*
+!/.env.example
+
+# Source photography is kept out of git by default — the generated renditions in
+# /public/img are what the site ships. Remove this line if you want to version
+# your own photography alongside the pipeline.
+# raw/

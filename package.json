@@ -1,0 +1,33 @@
+{
+  "name": "bloodlink",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "images": "node scripts/build-images.mjs",
+    "data": "node scripts/gen-data.mjs",
+    "standalone": "node scripts/build-standalone.mjs"
+  },
+  "dependencies": {
+    "framer-motion": "^11.11.17",
+    "gsap": "^3.12.5",
+    "leaflet": "^1.9.4",
+    "lenis": "^1.1.18",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@fontsource-variable/bricolage-grotesque": "^5.1.1",
+    "@fontsource-variable/instrument-sans": "^5.1.1",
+    "@fontsource-variable/noto-sans-tamil": "^5.1.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "sharp": "^0.33.5",
+    "tailwindcss": "^3.4.17",
+    "vite": "^5.4.11"
+  }
+}
